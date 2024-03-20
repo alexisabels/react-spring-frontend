@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 
-const backend: string='http://localhost:8080/api/hora'
+// Consumo de esta API cada 3 segundos
+const backend: string='/api/hora'
 const refresco: number=3000
-
 
 function App() {
   // Creo una variable de  estado
@@ -24,8 +24,6 @@ function App() {
         clearInterval(interval);
       };
   }, []);
-
-
 
 
   // Cambio Aprende React en {process.env.NODE_ENV}
@@ -48,8 +46,6 @@ function App() {
     </div>
   );
 }
-
-
 
 
 export default App;
